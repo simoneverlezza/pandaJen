@@ -43,12 +43,7 @@ public class HomeController {
 	private static final String SERVICE = "Service";
 	private static final String CONTROLLER = "Controller";
 	
-
-	@GetMapping("/")
-	public ResponseEntity<String> test() {
-		serviceGenerator.generate("Employee");
-		return new ResponseEntity<>("Testing..", HttpStatus.OK);	
-	}
+	
 	
 	@GetMapping("download/{className}")
 	public ResponseEntity<StreamingResponseBody> download(@PathVariable String className) {
