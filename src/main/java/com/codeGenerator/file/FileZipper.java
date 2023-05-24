@@ -35,8 +35,10 @@ public class FileZipper {
 	            while((length = fis.read(bytes)) >= 0) {
 	                zipOut.write(bytes, 0, length);
 	            }
+	            
 	            fis.close();
 	        }
+	        
 	        zipOut.close();
 	        fos.close();
 	        
