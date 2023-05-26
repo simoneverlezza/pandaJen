@@ -2,8 +2,6 @@
 ![panda-6846845 (2)](https://github.com/simoirs/pandaJen/assets/131461380/d420349d-863e-4f63-9243-32079515266c)
 
 
-.. for the lazy.
-
 A code generator targeted to Spring Boot's REST Api.
 Type in the class name and it generates:
 
