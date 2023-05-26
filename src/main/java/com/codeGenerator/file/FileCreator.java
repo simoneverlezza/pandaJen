@@ -18,38 +18,10 @@ public class FileCreator {
 	
 	public static Path create(String name, String content) {
 
-		Path path;
-
-		if(name.contains("Repository")) {
-			try {
-				Path baseDir = Files.createDirectories(Paths.get("created/repository"));
-				path = Path.of(baseDir.toString() + "/" + name + ".java");
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-		} else if (name.contains("Service")) {
-			try {
-				Path baseDir = Files.createDirectories(Paths.get("created/service"));
-				path = Path.of(baseDir.toString() + "/" + name + ".java");
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-		} else {
-			try {
-				Path baseDir = Files.createDirectories(Paths.get("created/controller"));
-				path = Path.of(baseDir.toString() + "/" + name + ".java");
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-		}
-			
-		/*File baseDir = new File("created");
+		File baseDir = new File("created");
 		baseDir.mkdir();
 		
-		Path path = Path.of(baseDir + "/" + name + ".java");*/
+		Path path = Path.of(baseDir + "/" + name + ".java");
 		
 		try {
 			
