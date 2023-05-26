@@ -19,12 +19,15 @@ public class FileZipper {
 		try {
 			
 			String zipFile = "created" + "/" + fileName + ".zip";
+
+			LOG.info("Zip file name: " + zipFile.toString());
 			
 			final FileOutputStream fos = new FileOutputStream(zipFile);
 	        
 			ZipOutputStream zipOut = new ZipOutputStream(fos);
 
 	        for (String file : files) {
+				LOG.info("Trying to zip: " + file);
 	            File fileToZip = new File(file);
 	            FileInputStream fis = new FileInputStream(fileToZip);
 	            ZipEntry zipEntry = new ZipEntry(fileToZip.getName());

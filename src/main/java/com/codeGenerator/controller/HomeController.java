@@ -54,6 +54,8 @@ public class HomeController {
 		Path repoFile = FileCreator.create(className + REPOSITORY, repositoryClass);
 		Path servFile = FileCreator.create(className + SERVICE, serviceClass);
 		Path contFile = FileCreator.create(className + CONTROLLER, controllerClass);
+
+		LOG.info("Repo file path: " + repoFile.toString());
 		
 		List<String> fileNames = List.of(
 				repoFile.toString(),
