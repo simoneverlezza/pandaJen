@@ -18,7 +18,7 @@ public class FileZipper {
 	public static File zipMultipleFiles(List<String> files, String fileName) {
 		try {
 			
-			String zipFile = fileName + ".zip";
+			String zipFile = "created" + "/" + fileName + ".zip";
 			
 			final FileOutputStream fos = new FileOutputStream(zipFile);
 	        
