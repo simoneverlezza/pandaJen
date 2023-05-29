@@ -16,6 +16,7 @@ public class ServiceGenerator {
 				
 				import org.springframework.beans.factory.annotation.Autowired;
 				
+				@Service
 				public class %sService {
 					
 					@Autowired
