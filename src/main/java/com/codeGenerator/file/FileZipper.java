@@ -12,22 +12,17 @@ import org.slf4j.LoggerFactory;
 
 public class FileZipper {
 	
-	private static Logger LOG = LoggerFactory.getLogger(FileZipper.class);
-	
-	
 	public static File zipMultipleFiles(List<String> files, String fileName) {
 		try {
 			
 			String zipFile = "created" + "/" + fileName + ".zip";
 
-			LOG.info("Zip file name: " + zipFile.toString());
 			
 			final FileOutputStream fos = new FileOutputStream(zipFile);
 	        
 			ZipOutputStream zipOut = new ZipOutputStream(fos);
 
 	        for (String file : files) {
-				LOG.info("Trying to zip: " + file);
 	            File fileToZip = new File(file);
 	            FileInputStream fis = new FileInputStream(fileToZip);
 	            ZipEntry zipEntry = new ZipEntry(fileToZip.getName());

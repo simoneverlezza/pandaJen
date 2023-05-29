@@ -18,7 +18,7 @@ public class FileCreator {
 	
 	public static Path create(String name, String content) {
 
-		File baseDir = new File("created");
+		File baseDir = new File(BASE_DIRECTORY);
 		baseDir.mkdir();
 		
 		Path path = Path.of(baseDir + "/" + name + ".java");
