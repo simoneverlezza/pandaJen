@@ -12,3 +12,8 @@ Type in the class name and it generates:
 ..complete with the most used methods and an empty stub for the ones that need the actual class variables, like "update".
 
 It is not perfect, there's still work to do, but it's already a time saver for any start of a project.
+
+<b>Usage:</b>
+- Build with Maven or <a href="https://hub.docker.com/repository/docker/simoirs/codegenerator/general">Docker</a>
+- Connect to http://localhost:8080/download/{classname} 
+- Receive the generated classes
