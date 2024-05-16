@@ -17,3 +17,9 @@ It is not perfect, there's still work to do, but it's already a time saver for a
 - Build with Maven or <a href="https://hub.docker.com/repository/docker/simoirs/codegenerator/general">Docker</a>
 - Connect to http://localhost:8080/download/{classname} 
 - Receive the generated classes
+
+  <b>Docker commands:<b>
+  
+- docker pull simoirs/codegenerator
+- docker run -p 8080:8080 simoirs/codegenerator
+  Now you can connect to the above mentioned URL
