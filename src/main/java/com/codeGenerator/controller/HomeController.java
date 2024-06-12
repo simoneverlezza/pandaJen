@@ -66,8 +66,8 @@ public class HomeController {
 			InputStream inputStream = new FileInputStream(zipFile);
 			StreamingResponseBody body = outputStream -> FileCopyUtils.copy(inputStream, outputStream);
 
-			LOG.info("File ready");
-			
+			LOG.info("File Ready");
+
 			return ResponseEntity.ok()
 	                .header("Content-Disposition", "attachment;filename= " + zipFile)
 	                .body(body);
